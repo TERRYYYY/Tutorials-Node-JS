@@ -1,0 +1,15 @@
+server {
+    listen 80;
+    server_name example.com www.example.com;
+    # ssl_* directives here
+    root /var/www/example.com/html;
+    index index.php index.html index.htm index.nginx-debian.html;
+    }
+
+server {
+    listen 80;
+    server_name test.example.com www.test.example.com;
+    # ssl_* directives here
+    root /var/www/example.com/test;
+    index index.php index.html index.htm index.nginx-debian.html;
+}
